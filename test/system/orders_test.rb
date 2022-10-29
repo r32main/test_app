@@ -2,7 +2,7 @@ require "application_system_test_case"
 
 class OrdersTest < ApplicationSystemTestCase
   include ActiveJob::TestHelper
-  test "check dynamic fields" do
+test "check dynamic fields" do
     visit store_index_url
 
     click_on 'Add to Cart', match: :first
